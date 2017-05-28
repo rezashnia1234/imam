@@ -1,5 +1,5 @@
 <krpano version="1.19" title="Virtual Tour" onstart="startup();" showerrors="true" logkey="true">
-	<include url="plugins/webvr.xml" />
+	<include url="plugins/webvr.xml"  />
 
                                                                                               
 	<layer name="webvr_rotate_to_landscape_request" keep="true" vr="true" devices="mobile" type="container" bgcolor="0x000000" bgalpha="0.8" width="100%" height="100%" align="center" visible="false" zorder="1">
@@ -107,6 +107,16 @@ set(layer[mobiledevice].y,40);
 	<hotspot name="spot8" style="hotspotstyle" ath="52.662" atv="-46.779" linkedscene="scene_menare_rast" />
 	<hotspot name="spot9" style="hotspotstyle" ath="-19.303" atv="-46.368" linkedscene="scene_menare_chap" />
 	<hotspot name="spot10" style="hotspotstyle" ath="-163.143" atv="3.723" linkedscene="scene_25_roze" />
+	
+	
+	
+	<hotspot name="sensor10" ath="10" atv="0" onclick="set(plugin[WebVR].mobilevr_sensor_mode,1);error(111111);error(get(plugin[WebVR].mobilevr_sensor_mode));" onloaded="" url="hotspots/infos.png" style="hotspotstyle" />
+	<hotspot name="sensor11" ath="20" atv="0" onclick="set(plugin[WebVR].mobilevr_sensor_mode,2);error(222222);error(get(plugin[WebVR].mobilevr_sensor_mode));" onloaded="" url="hotspots/infos.png" style="hotspotstyle" />
+	<hotspot name="sensor12" ath="30" atv="0" onclick="set(plugin[WebVR].mobilevr_sensor_mode,3);error(333333);error(get(plugin[WebVR].mobilevr_sensor_mode));" onloaded="" url="hotspots/infos.png" style="hotspotstyle" />
+	<hotspot name="sensor13" ath="40" atv="0" onclick="set(plugin[WebVR].mobilevr_sensor_mode,4);error(444444);error(get(plugin[WebVR].mobilevr_sensor_mode));" onloaded="" url="hotspots/infos.png" style="hotspotstyle" />
+	<hotspot name="sensor14" ath="10" atv="10" onclick="set(plugin[WebVR].mobilevr_sensor_mode,5);error(555555);error(get(plugin[WebVR].mobilevr_sensor_mode));" onloaded="" url="hotspots/infos.png" style="hotspotstyle" />
+	<hotspot name="sensor15" ath="20" atv="10" onclick="set(plugin[WebVR].mobilevr_sensor_mode,6);error(666666);error(get(plugin[WebVR].mobilevr_sensor_mode));" onloaded="" url="hotspots/infos.png" style="hotspotstyle" />
+	<hotspot name="sensor16" ath="30" atv="10" onclick="set(plugin[WebVR].mobilevr_sensor_mode,7);error(777777);error(get(plugin[WebVR].mobilevr_sensor_mode));" onloaded="" url="hotspots/infos.png" style="hotspotstyle" />
 
 		
 		
@@ -147,11 +157,12 @@ set(layer[mobiledevice].y,40);
 			
 		<events name="intro_go" onloadcomplete="letsgobaby()"/>
 		<action name="letsgobaby">
-		//lookto(20,-20,90,smooth(10,50,25),false,true);
-		//tween(layer[logo].alpha,1,5);
+		lookto(20,-20,90,smooth(10,50,25),false,true);
+		tween(layer[logo].alpha,1,5);
 		delayedcall(1,tween(layer[introbg].bgalpha,0.5,2);tween(layer[startvrbutton].alpha,1,2);tween(layer[startnormalbutton].alpha,1,2));
 		
 		playsound(bgsound,amin-allah.mp3,0);
+		//set(plugin[WebVR].mobilevr_sensor_mode,1));
 		</action>
 	
 	<layer name="logo360images" url="360images.png" align="topright" y="20" x="20" scale="0.8" zorder="1000" keep="true" enabled="false"/>
@@ -162,6 +173,8 @@ set(layer[mobiledevice].y,40);
 	
 	<layer name="startnormalbutton" align="bottom" type="container" bgalpha="0.0" bgborder="1 0xffffff 1" width="300" height="40" alpha="0" y="205" bgcapture="true"
 	   onclick="
+	   set(plugin[gyro].enabled,true));
+	   
 	   tween(layer[logo].y,-500,2);
 	   tween(layer[logo].alpha,0,2);
 	   tween(layer[startnormalbutton].y,-200,2);
@@ -430,7 +443,6 @@ if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);t
 
 
 
-
 <include url="%SWFPATH%/contro-normal.xml"/>
 <include url="%SWFPATH%/map-local.xml"/>
 <control movetocursor="vector"/>
@@ -450,7 +462,7 @@ if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);t
 </lensflareset>
 <plugin name="gyro" devices="html5" keep="true"
 		url="%SWFPATH%/plugins/gyro2.js" 
-		enabled="true"
+		enabled="false"
 		camroll="true"
 		friction="0.0"
 		touch_mode="full"
