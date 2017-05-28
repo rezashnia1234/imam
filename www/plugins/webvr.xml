@@ -243,11 +243,15 @@
 			set(ask_user_for_screensize, false);
 			vr_setup();
 			vr_setup_customize_headset();
-		  );
+		);
+		
+		//set(plugin[MotionGesture].enabled, true);
 	</action>
 
 
 	<action name="webvr_onexitvr">
+		//set(plugin[MotionGesture].enabled, false);
+		
 		stopdelayedcall(vr_button_fadeout);
 		set(layer[webvr_button].crop,0|0|100|63);
 		tween(layer[webvr_button].alpha,1);

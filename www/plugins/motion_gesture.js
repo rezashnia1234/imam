@@ -24,7 +24,8 @@ var krpanoplugin = function()
 		//krpano.set(plugin[MotionGesture].curent_pano,scene[get(xml.scene)].name);
         //krpano.trace(1,"000000" + plugin.curent_pano);
 		/**/
-		VR_LOOP();
+		/////////////////////////////////////////////////////////////////////////////////
+		// VR_LOOP();
 		function VR_LOOP() {
 			setTimeout(function(){
 				var krpano2 = document.getElementById('krpanoSWFObject');
