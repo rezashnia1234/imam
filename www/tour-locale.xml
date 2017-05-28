@@ -1,5 +1,5 @@
 <krpano version="1.16" title="Virtual Tour" onstart="startup();" showerrors="true" logkey="true">
-	<include url="plugins/webvr.xml" />
+	<!-- <include url="plugins/webvr.xml" /> -->
 
 
 
