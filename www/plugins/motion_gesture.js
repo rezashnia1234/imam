@@ -55,7 +55,7 @@ var krpanoplugin = function()
 						krpano.call("loadscene(" + plugin.target_pano+ ", 0, null, NOPREVIEW|MERGE|KEEPVIEW|KEEPMOVING, BLEND(1));");
 						
 						krpano.call("stopallsounds();");
-						krpano.call("playsound(bgsound,audio/amin-allah.mp3,0);");
+						krpano.call("playsound(bgsound,amin-allah.mp3,0);");
 					}
 				}
 				else

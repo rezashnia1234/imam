@@ -151,7 +151,7 @@ set(layer[mobiledevice].y,40);
 		tween(layer[logo].alpha,1,5);
 		delayedcall(5,tween(layer[introbg].bgalpha,0.5,2);tween(layer[startvrbutton].alpha,1,2);tween(layer[startnormalbutton].alpha,1,2));
 		
-		playsound(bgsound,audio/amin-allah.mp3,0);
+		playsound(bgsound,amin-allah.mp3,0);
 		</action>
 	
 	<layer name="logo360images" url="360images.png" align="topright" y="20" x="20" scale="0.8" zorder="1000" keep="true" enabled="false"/>
@@ -379,7 +379,7 @@ if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);t
 	<plugin name="soundinterface"
         url="plugins/soundinterface.js"
         preload="true"
-        rootpath=""
+        rootpath="audio/"
         volume="1.0"
         mute="false"
         />
