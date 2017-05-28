@@ -3,7 +3,7 @@
 	<krpano stagescale="calc:stagescale * 2" if="stagescale LT 1.0" devices="mobile" />
 
 	<!-- Skin Hotspot Style (the hotspots need a 'linkedscene' attribute to be clickable)-->
-	<style name="skin_hotspotstyle" url="skin/vtourskin_hotspot.png" zorder="1000" scale="0.5" edge="top" oy="0" onclick="pausevideo();if(linkedscene, tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1));  );" />
+	<style name="skin_hotspotstyle" url="skin/vtourskin_hotspot.png" distorted="true" vr_timeout="1000" zorder="1000" scale="0.5" edge="top" oy="0" onclick="pausevideo();if(linkedscene, tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1));  );" />
 	<textstyle name="ToolTips" 
 			   font="tahoma" fontsize="12" bold="false" italic="false" textcolor="0xFFFFFF" background="true" backgroundcolor="0x000000" border="false"
 			   alpha="0.85" blendmode="layer"
