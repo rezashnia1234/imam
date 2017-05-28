@@ -147,9 +147,9 @@ set(layer[mobiledevice].y,40);
 			
 		<events name="intro_go" onloadcomplete="letsgobaby()"/>
 		<action name="letsgobaby">
-		lookto(20,-20,90,smooth(10,50,25),false,true);
-		tween(layer[logo].alpha,1,5);
-		delayedcall(5,tween(layer[introbg].bgalpha,0.5,2);tween(layer[startvrbutton].alpha,1,2);tween(layer[startnormalbutton].alpha,1,2));
+		//lookto(20,-20,90,smooth(10,50,25),false,true);
+		//tween(layer[logo].alpha,1,5);
+		delayedcall(1,tween(layer[introbg].bgalpha,0.5,2);tween(layer[startvrbutton].alpha,1,2);tween(layer[startnormalbutton].alpha,1,2));
 		
 		playsound(bgsound,amin-allah.mp3,0);
 		</action>
