@@ -39,13 +39,13 @@ Move-Map();
 		scalechildren="false"
 		handcursor="true"
 		capture="true"
-		zorder="3000"
+		zorder="10002"
 		width="70" height="63"
 		onclick="showmap"
 		/>
 
 
-<plugin name="map-body-all-screen" onclick="showmap" url="skin/blank.png" align="lefttop" x="0" y="0" keep="true" maskchildren="true" scalechildren="false" handcursor="false" capture="false" enabled="false" zorder="10000" width="100%" height="100%"/>
+<plugin name="map-body-all-screen" onclick="showmap" url="skin/blank.png" align="lefttop" x="0" y="0" keep="true" maskchildren="true" scalechildren="false" handcursor="false" capture="false" zorder="10000" width="100%" height="100%"/>
 
 <plugin name="map-body" url="skin/blank.png" align="lefttop" x2="5" x="-323" y="30" keep="true" maskchildren="true" scalechildren="false" handcursor="false" capture="false" zorder="10001" width="323" height="345"/>
 <plugin name="map-background-front" url="skin/imamali/map-back.png" parent="map-body" align="lefttop" x="0" y="0" keep="true" maskchildren="false" scalechildren="false" handcursor="false" capture="false" zorder="10001" width="325" height="345" blendmode="normal"/>
