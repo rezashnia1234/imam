@@ -20,12 +20,12 @@
 	direction:ltr;
 	text-align: right;
 	background-color: #c3e8ff;
-	height: 8vw;
+	height: 8vh;
 	padding: 0px;
 	width: 85%;
-	-moz-border-radius: 1.4vw;
-	-webkit-border-radius: 1.4vw;
-	border-radius: 1.4vw;
+	-moz-border-radius: 1.4vh;
+	-webkit-border-radius: 1.4vh;
+	border-radius: 1.4vh;
 }
 
 .progress-bar span {
@@ -68,9 +68,9 @@
 	border-radius: 3px;
 	  
 	border:none;
-	width:41.68vw;
-	height:13.375vw;
-	font-size:5.5vw;
+	width:41.68vh;
+	height:13.375vh;
+	font-size:5.5vh;
 	margin-top: -30px;
 	
 }
@@ -78,7 +78,7 @@
     width: 100%;
     text-align: center;
     position: fixed;
-    bottom: 11vw;
+    bottom: 11vh;
     left: 0;
     right: 0;
 }
@@ -87,39 +87,39 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center right;
-    padding-right: 9vw;
-    font-size: 5vw;
+    padding-right: 9vh;
+    font-size: 5vh;
     color: #167bb0;
 	text-align:center;
 }
-.progress-bar #descripion .hajm{color:#f9b233;display:inline-block;font-size: 5vw;direction:ltr;}
-.progress-bar #descripion .hajm div{display:inline-block;width: 0.7vw;}
-.progress-bar #descripion .first{display:inline;font-size: 5vw;}
+.progress-bar #descripion .hajm{color:#f9b233;display:inline-block;font-size: 5vh;direction:ltr;}
+.progress-bar #descripion .hajm div{display:inline-block;width: 0.7vh;}
+.progress-bar #descripion .first{display:inline;font-size: 5vh;}
 .progress-bar #descripion .first::before {
     display: inline-block;
     content: "000000";
     background-image: url('../images/tahmil.png');
-    width: 5vw;
-    height: 6vw;
+    width: 5vh;
+    height: 6vh;
     overflow: hidden;
     color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
     position: absolute;
-    top: 1.2vw;
-    right: -5vw;
+    top: 1.2vh;
+    right: -5vh;
 }
 .progress-bar #status {
     color: #ffffff;
     min-height: 19px;
     direction: rtl;
     position: absolute;
-    top: -10vw;
+    top: -10vh;
     text-align: center;
     width: 100%;
     color: #167bb0;
-	font-size: 6vw;
+	font-size: 6vh;
 }
 /*---------------------------*/			
 
