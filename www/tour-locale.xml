@@ -200,10 +200,10 @@ set(layer[mobiledevice].y,40);
 	                                                           
 	<style name="vr_menu_style" depth="800" scale="0.7" distorted="true" ath="0" atv="45" visible="false" />
 
-	<hotspot name="vr_menu_home" style="vr_menu_style" keep="true" zorder="6" url="home.png" onover="vr_menu_over();" onout="vr_menu_out();" onclick="vr_menu_loadhome();"/>
+	<!-- <hotspot name="vr_menu_home" style="vr_menu_style" keep="true" zorder="6" url="home.png" onover="vr_menu_over();" onout="vr_menu_out();" onclick="vr_menu_loadhome();"/> -->
 
 	<action name="vr_menu_over">
-		callwith(hotspot[vr_menu_home], tween(alpha|depth,1|650); );
+		//callwith(hotspot[vr_menu_home], tween(alpha|depth,1|650); );
 	</action>
 
 	<action name="placemenuhs">
@@ -213,7 +213,7 @@ set(layer[mobiledevice].y,40);
 	</action>
 	
 	<action name="vr_menu_out">
-			callwith(hotspot[vr_menu_home], tween(alpha|depth,0.5|800); );
+			//callwith(hotspot[vr_menu_home], tween(alpha|depth,0.5|800); );
 	</action>
 
 	<action name="vr_menu_loadhome">
@@ -224,10 +224,10 @@ set(layer[mobiledevice].y,40);
 	</action>
 		
 	<action name="vr_menu_setvisibility">
-		set(hotspot[vr_menu_home].visible, %1);
+		//set(hotspot[vr_menu_home].visible, %1);
 	</action>
 	
-	<events name="vr_menu_events" keep="true" onviewchange="vr_menu_following();"  />
+	<!-- <events name="vr_menu_events" keep="true" onviewchange="vr_menu_following();"  /> -->
 
 	                                                                                                 
 	<action name="vr_menu_following" type="Javascript" devices="html5"><![CDATA[
