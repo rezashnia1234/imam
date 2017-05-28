@@ -95,9 +95,9 @@ set(layer[mobiledevice].y,40);
 
 	                       
 	<view fovtype="VFOV" fov="60" fovmin="40" fovmax="110" vlookat="0" hlookat="150"/>
-		<preview url="%$mypath%/07_roze.tiles/preview.jpg" />
+		<preview url="%$mypath%/panos/07_roze.tiles/preview.jpg" />
 		<image>
-				<cube url="%$mypath%/07_roze.tiles/mobile_%s.jpg"/>
+				<cube url="%$mypath%/panos/07_roze.tiles/mobile_%s.jpg"/>
 		</image>
 		<hotspot name="show_menu" frimage="hotspots/startvr_fr.png" engimage="hotspots/startvr_eng.png" style="startstyle" />
 		<style name="startstyle" visible="false" distorted="true" vr_timeout="2000" depth="800" ty="0" enabled="false"/>
@@ -439,7 +439,7 @@ set(IsAutoRotate,true);
 
 
 
-<scene name="scene_01zarih_sphere" title="الضريح المقدس مدخل إيوان الذهب" onstart="action(startsceneACT);" thumburl="%$mypath%/01zarih_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_01zarih_sphere" title="الضريح المقدس مدخل إيوان الذهب" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/01zarih_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_01zarih_sphere, 0);
 set(plugin[radar].heading, -88.79);
@@ -457,10 +457,10 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/01zarih_sphere.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/01zarih_sphere.tiles/preview.jpg"/>
 <image type="CUBE">
 
-<cube url="%$mypath%/01zarih_sphere.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/01zarih_sphere.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="38.572" atv="12.822" linkedscene="scene_02zarih_sphere"/>
@@ -469,7 +469,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_02zarih_sphere" title="الضريح المقدس جهة باب الزنجاني" onstart="action(startsceneACT);" thumburl="%$mypath%/02zarih_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_02zarih_sphere" title="الضريح المقدس جهة باب الزنجاني" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/02zarih_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_02zarih_sphere, 0);
 set(plugin[radar].heading, -173.21);
@@ -487,9 +487,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-5.305" vlookat="0.887" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/02zarih_sphere.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/02zarih_sphere.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/02zarih_sphere.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/02zarih_sphere.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="-61.490" atv="11.816" linkedscene="scene_01zarih_sphere"/>
@@ -498,7 +498,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_03zarih_sphere" title="الضريح المقدس جهة الرأس الشريف" onstart="action(startsceneACT);" thumburl="%$mypath%/03zarih_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_03zarih_sphere" title="الضريح المقدس جهة الرأس الشريف" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/03zarih_sphere.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_03zarih_sphere, 0);
 set(plugin[radar].heading, 97.87);
@@ -516,9 +516,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-3.728" vlookat="0.412" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/03zarih_sphere.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/03zarih_sphere.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/03zarih_sphere.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/03zarih_sphere.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="-52.676" atv="11.411" linkedscene="scene_02zarih_sphere"/>
@@ -533,7 +533,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_06_roze" title="إيوان الذهب المدخل الرئيسي" onstart="action(startsceneACT);" thumburl="%$mypath%/06_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_06_roze" title="إيوان الذهب المدخل الرئيسي" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/06_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_06_roze, 0);
 set(plugin[radar].heading, -93.24);
@@ -551,9 +551,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/06_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/06_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/06_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/06_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot2" style="skin_hotspotstyle" ath="179.371" atv="4.546" linkedscene="scene_07_roze"/>
@@ -563,7 +563,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_07_roze" title="باحة الصحن المقابله لإيوان الذهب" onstart="action(startsceneACT);" thumburl="%$mypath%/07_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_07_roze" title="باحة الصحن المقابله لإيوان الذهب" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/07_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_07_roze, 0);
 set(plugin[radar].heading, -112.45);
@@ -581,9 +581,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="20.302" vlookat="-25.323" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/07_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/07_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/07_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/07_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="14.686" atv="4.054" linkedscene="scene_06_roze"/>
@@ -601,7 +601,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_12_roze" title="باحة الصحن الشريف جهة رواق ابو طالب" onstart="action(startsceneACT);" thumburl="%$mypath%/12_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_12_roze" title="باحة الصحن الشريف جهة رواق ابو طالب" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/12_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_12_roze, 0);
 set(plugin[radar].heading, -172.38);
@@ -619,9 +619,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/12_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/12_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/12_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/12_roze.tiles/mobile_%s.jpg"/>
 </image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-92.011" atv="5.530" linkedscene="scene_41_roze" />
  
@@ -638,7 +638,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_16_roze" title="باحة الصحن الشريف مقابل باب الشيخ الطوسي" onstart="action(startsceneACT);" thumburl="%$mypath%/16_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_16_roze" title="باحة الصحن الشريف مقابل باب الشيخ الطوسي" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/16_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_16_roze, 0);
 set(plugin[radar].heading, -157.59);
@@ -656,9 +656,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-16.272" vlookat="-5.589" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/16_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/16_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/16_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/16_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot3" style="skin_hotspotstyle" ath="-75.503" atv="-10.118" linkedscene="scene_ivane_rast_roze"/>
@@ -679,7 +679,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_18_roze" title="باب الشيخ الطوسي(قدس)" onstart="action(startsceneACT);" thumburl="%$mypath%/18_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_18_roze" title="باب الشيخ الطوسي(قدس)" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/18_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_18_roze, 0);
 set(plugin[radar].heading, 234.41);
@@ -697,9 +697,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-52.980" vlookat="-1.409" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/18_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/18_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/18_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/18_roze.tiles/mobile_%s.jpg"/>
 </image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-53.048" atv="9.614" linkedscene="scene_16_roze" />
 		
@@ -713,7 +713,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_21_roze" title="باحة الصحن الشريف جهة باب الشيخ الطوسي" onstart="action(startsceneACT);" thumburl="%$mypath%/21_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_21_roze" title="باحة الصحن الشريف جهة باب الشيخ الطوسي" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/21_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_21_roze, 0);
 set(plugin[radar].heading, -149.61);
@@ -731,9 +731,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="17.698" vlookat="-9.048" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/21_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/21_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/21_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/21_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="16.810" atv="-11.516" linkedscene="scene_ivane_rast_roze"/>
@@ -749,7 +749,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_29_roze" title="باحة الصحن الشريف جهة باب القبلة " onstart="action(startsceneACT);" thumburl="%$mypath%/29_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_29_roze" title="باحة الصحن الشريف جهة باب القبلة " onstart="action(startsceneACT);" thumburl="%$mypath%/panos/29_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_29_roze, 0);
 set(plugin[radar].heading, 18.75);
@@ -767,9 +767,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-81.177" vlookat="-6.432" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/29_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/29_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/29_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/29_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="-88.360" atv="-10.269" linkedscene="scene_ivan_chap_roze_roze"/>
@@ -784,7 +784,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_30_roze" title="باب القبلة" onstart="action(startsceneACT);" thumburl="%$mypath%/30_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_30_roze" title="باب القبلة" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/30_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_30_roze, 0);
 set(plugin[radar].heading, 0);
@@ -802,9 +802,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/30_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/30_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/30_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/30_roze.tiles/mobile_%s.jpg"/>
 </image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-2.947" atv="13.223" linkedscene="scene_40-roze" />
  
@@ -822,7 +822,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_40-roze" title="باحة الصحن الشريف المقابله لإيوان ميزاب الذهب" onstart="action(startsceneACT);" thumburl="%$mypath%/40-roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_40-roze" title="باحة الصحن الشريف المقابله لإيوان ميزاب الذهب" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/40-roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_40-roze, 0);
 set(plugin[radar].heading, 58.38);
@@ -840,9 +840,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-58.448" vlookat="-5.574" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/40-roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/40-roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/40-roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/40-roze.tiles/mobile_%s.jpg"/>
 </image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="55.089" atv="5.185" linkedscene="scene_30_roze" />
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="8.482" atv="6.680" linkedscene="scene_29_roze" />
@@ -853,7 +853,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_41_roze" title="باحة الصحن الشريف مقابل إيوان العلماء" onstart="action(startsceneACT);" thumburl="%$mypath%/41_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_41_roze" title="باحة الصحن الشريف مقابل إيوان العلماء" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/41_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_41_roze, 0);
 set(plugin[radar].heading, -132.62);
@@ -871,9 +871,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-46.256" vlookat="-10.748" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/41_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/41_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/41_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/41_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot2" style="skin_hotspotstyle" ath="36.976" atv="7.911" linkedscene="scene_12_roze"/>
@@ -895,7 +895,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_46_roze" title="باب الفرج" onstart="action(startsceneACT);" thumburl="%$mypath%/46_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_46_roze" title="باب الفرج" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/46_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_46_roze, 0);
 set(plugin[radar].heading, 170.97);
@@ -913,9 +913,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-79.874" vlookat="3.041" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/46_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/46_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/46_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/46_roze.tiles/mobile_%s.jpg"/>
 </image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-79.874" atv="10.696" linkedscene="scene_40-roze" />
  
@@ -927,7 +927,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_ivan_chap_roze_roze" title="كيشوانية باب القبلة" onstart="action(startsceneACT);" thumburl="%$mypath%/ivan_chap_roze_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_ivan_chap_roze_roze" title="كيشوانية باب القبلة" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/ivan_chap_roze_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_ivan_chap_roze_roze, 0);
 set(plugin[radar].heading, 136.15);
@@ -945,9 +945,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-136.041" vlookat="-17.632" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/ivan_chap_roze_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/ivan_chap_roze_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/ivan_chap_roze_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/ivan_chap_roze_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="-131.937" atv="-1.554" linkedscene="scene_ivane_rast_roze"/>
@@ -962,7 +962,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_ivane_rast_roze" title="كيشوانية باب الشيخ الطوسي" onstart="action(startsceneACT);" thumburl="%$mypath%/ivane_rast_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_ivane_rast_roze" title="كيشوانية باب الشيخ الطوسي" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/ivane_rast_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_ivane_rast_roze, 0);
 set(plugin[radar].heading, -140.95);
@@ -980,9 +980,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="17.707" vlookat="-13.199" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/ivane_rast_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/ivane_rast_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/ivane_rast_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/ivane_rast_roze.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="-59.623" atv="12.999" linkedscene="scene_07_roze"/>
@@ -1000,7 +1000,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_25_roze" title="جهة السوق الكبير" onstart="action(startsceneACT);" thumburl="%$mypath%/25_roze.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_25_roze" title="جهة السوق الكبير" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/25_roze.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_25_roze, 0);
 set(plugin[radar].heading, -59.72);
@@ -1018,9 +1018,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="-31.043" vlookat="-3.886" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/25_roze.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/25_roze.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/25_roze.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/25_roze.tiles/mobile_%s.jpg"/>
 </image>
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="-34.413" atv="8.879" linkedscene="scene_07_roze" />
  
@@ -1036,7 +1036,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_menare_chap" title="المنارة الجنوبية" onstart="action(startsceneACT);" thumburl="%$mypath%/menare_chap.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_menare_chap" title="المنارة الجنوبية" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/menare_chap.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_menare_chap, 0);
 set(plugin[radar].heading, -104.75);
@@ -1054,9 +1054,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="167.391" vlookat="2.197" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/menare_chap.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/menare_chap.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/menare_chap.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/menare_chap.tiles/mobile_%s.jpg"/>
 </image>
  
 		<hotspot name="spot1" style="skin_hotspotstyle" ath="179.566" atv="47.277" linkedscene="scene_07_roze" />
@@ -1068,7 +1068,7 @@ set(plugin[rotate-icon].enabled,true);
 
 
 
-<scene name="scene_menare_rast" title="المنارة الشمالية" onstart="action(startsceneACT);" thumburl="%$mypath%/menare_rast.tiles/thumb.jpg" lat="" lng="" heading="">
+<scene name="scene_menare_rast" title="المنارة الشمالية" onstart="action(startsceneACT);" thumburl="%$mypath%/panos/menare_rast.tiles/thumb.jpg" lat="" lng="" heading="">
 <action name="startsceneACT">
 action(activatespotRadar,scene_menare_rast, 0);
 set(plugin[radar].heading, 284.28);
@@ -1086,9 +1086,9 @@ set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
 <view hlookat="206.508" vlookat="12.476" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
-<preview url="%$mypath%/menare_rast.tiles/preview.jpg"/>
+<preview url="%$mypath%/panos/menare_rast.tiles/preview.jpg"/>
 <image type="CUBE">
-<cube url="%$mypath%/menare_rast.tiles/mobile_%s.jpg"/>
+<cube url="%$mypath%/panos/menare_rast.tiles/mobile_%s.jpg"/>
 </image>
  
 <hotspot name="spot1" style="skin_hotspotstyle" ath="-134.659" atv="45.884" linkedscene="scene_07_roze" />
