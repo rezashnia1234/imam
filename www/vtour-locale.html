@@ -43,6 +43,11 @@
 
 		}
 		$(document).ready(function() {
+			$(document).bind('keydown', function(event) {
+			  if (event.keyCode == 27) {
+				event.preventDefault();
+			  }
+			});
 			setTimeout(function(){
 				$(".mypreload").html("");
 			}, 800);
