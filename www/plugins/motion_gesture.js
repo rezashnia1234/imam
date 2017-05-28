@@ -53,6 +53,9 @@ var krpanoplugin = function()
 						
 						plugin.curent_pano=plugin.target_pano;
 						krpano.call("loadscene(" + plugin.target_pano+ ", 0, null, NOPREVIEW|MERGE|KEEPVIEW|KEEPMOVING, BLEND(1));");
+						
+						krpano.call("stopallsounds();");
+						krpano.call("playsound(bgsound,audio/amin-allah.mp3,0);");
 					}
 				}
 				else

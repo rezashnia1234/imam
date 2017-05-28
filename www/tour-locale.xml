@@ -147,9 +147,11 @@ set(layer[mobiledevice].y,40);
 			
 		<events name="intro_go" onloadcomplete="letsgobaby()"/>
 		<action name="letsgobaby">
-		lookto(250,0,90,smooth(50,50,25),false,true);
+		lookto(20,-20,90,smooth(10,50,25),false,true);
 		tween(layer[logo].alpha,1,5);
 		delayedcall(5,tween(layer[introbg].bgalpha,0.5,2);tween(layer[startvrbutton].alpha,1,2);tween(layer[startnormalbutton].alpha,1,2));
+		
+		playsound(bgsound,audio/amin-allah.mp3,0);
 		</action>
 	
 	<layer name="logo360images" url="360images.png" align="topright" y="20" x="20" scale="0.8" zorder="1000" keep="true" enabled="false"/>
@@ -280,9 +282,12 @@ set(layer[mobiledevice].y,40);
 <style name="skin_hotspotstyle333" url="skin/vtourskin_hotspot.png" vr_timeout="1500" depth="2000" scale="0.5" edge="top" oy="0" onover="copy(hotspot[hs_vr_cursor2].ath,ath);copy(hotspot[hs_vr_cursor2].atv,atv);
 if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);tween(hotspot[hs_vr_cursor2].depth,1000)" onout="tween(depth,2000);tween(hotspot[hs_vr_cursor2].depth,2000)" onloaded="txtadd(myclick,'loadscene(',get(linkedscene),',',get(vars),', MERGE|KEEPVIEW|KEEPMOVING, BLEND(1))');set(onclick,get(myclick))" />
 
-<style name="hotspotstyle" url="skin/vtourskin_hotspot.png" distorted="true" vr_timeout="2000" depth="2000" ty="0" onover="copy(hotspot[hs_vr_cursor2].ath,ath);copy(hotspot[hs_vr_cursor2].atv,atv);
-	if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);tween(hotspot[hs_vr_cursor2].depth,1000)" onout="tween(depth,2000);tween(hotspot[hs_vr_cursor2].depth,2000)" onloaded="txtadd(myclick,'loadscene(',get(linkedscene),',',get(vars),', MERGE|KEEPVIEW|KEEPMOVING, BLEND(1))');set(onclick,get(myclick))" />
-
+<style name="hotspotstyle" url="skin/vtourskin_hotspot.png" distorted="true" vr_timeout="2000" depth="2000" ty="0" scale="1" oy="0"
+	onover="copy(hotspot[hs_vr_cursor2].ath,ath);copy(hotspot[hs_vr_cursor2].atv,atv);
+	if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);tween(hotspot[hs_vr_cursor2].depth,1000)" 
+	onout="tween(depth,2000);tween(hotspot[hs_vr_cursor2].depth,2000)" 
+	onloaded="txtadd(myclick,'tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(',get(linkedscene),',null,MERGE,BLEND(1))');set(onclick,get(myclick));"
+/>
 
 <style name="cardboardstyle" url="hotspots/infos.png" distorted="true" vr_timeout="2000" depth="3000" oy="-100" onover="tween(depth,3500);txtadd(txtname,get(name),'_txt');tween(hotspot[get(txtname)].alpha,1);tween(hotspot[get(txtname)].depth,1000);tween(alpha,0.5)" onout="tween(depth,3000);tween(hotspot[get(txtname)].alpha,0);tween(hotspot[get(txtname)].depth,1500);tween(alpha,1)" visible="false" normal="false"/>
 
@@ -374,7 +379,7 @@ if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);t
 	<plugin name="soundinterface"
         url="plugins/soundinterface.js"
         preload="true"
-        rootpath="mp3/"
+        rootpath=""
         volume="1.0"
         mute="false"
         />

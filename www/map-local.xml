@@ -39,7 +39,7 @@ Move-Map();
 		scalechildren="false"
 		handcursor="true"
 		capture="true"
-		zorder="3000"
+		zorder="2999"
 		width="70" height="63"
 		onclick="showmap"
 		/>
