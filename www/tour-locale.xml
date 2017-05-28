@@ -1,6 +1,6 @@
 <krpano version="1.16" title="Virtual Tour" onstart="startup();" showerrors="true" logkey="true">
 	<include url="plugins/webvr.xml" />
-
+	<plugin name="MotionGesture" url="%SWFPATH%/plugins/motion_gesture.js" keep="true" devices="html5" target_pano="scene_07_roze" curent_pano="scene_07_roze"  />
 
 
 
@@ -88,6 +88,8 @@
 		set(plugin[Littelplant-icon].enabled,true);
 		set(plugin[rotate-icon].alpha,1);
 		set(plugin[rotate-icon].enabled,true);
+		
+		set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 	</action>
 	
 	<events name="intro_go" onloadcomplete="letsgobaby()"/>
@@ -127,6 +129,7 @@
 		set(plugin[Littelplant-icon].enabled,true);
 		set(plugin[rotate-icon].alpha,1);
 		set(plugin[rotate-icon].enabled,true);
+		set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 	</action>
 	<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 	<preview url="%$mypath%/panos/01zarih_sphere.tiles/preview.jpg"/>
@@ -157,6 +160,7 @@
 		set(plugin[Littelplant-icon].enabled,true);
 		set(plugin[rotate-icon].alpha,1);
 		set(plugin[rotate-icon].enabled,true);
+		set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 	</action>
 	<view hlookat="-5.305" vlookat="0.887" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 	<preview url="%$mypath%/panos/02zarih_sphere.tiles/preview.jpg"/>
@@ -186,6 +190,7 @@
 		set(plugin[Littelplant-icon].enabled,true);
 		set(plugin[rotate-icon].alpha,1);
 		set(plugin[rotate-icon].enabled,true);
+		set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 	</action>
 	<view hlookat="-3.728" vlookat="0.412" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 	<preview url="%$mypath%/panos/03zarih_sphere.tiles/preview.jpg"/>
@@ -212,6 +217,7 @@
 		set(plugin[Littelplant-icon].enabled,true);
 		set(plugin[rotate-icon].alpha,1);
 		set(plugin[rotate-icon].enabled,true);
+		set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 	</action>
 	<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 	<preview url="%$mypath%/panos/06_roze.tiles/preview.jpg"/>
@@ -241,6 +247,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/12_roze.tiles/preview.jpg"/>
@@ -278,6 +285,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-16.272" vlookat="-5.589" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/16_roze.tiles/preview.jpg"/>
@@ -319,6 +327,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-52.980" vlookat="-1.409" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/18_roze.tiles/preview.jpg"/>
@@ -353,6 +362,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="17.698" vlookat="-9.048" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/21_roze.tiles/preview.jpg"/>
@@ -389,6 +399,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-81.177" vlookat="-6.432" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/29_roze.tiles/preview.jpg"/>
@@ -424,6 +435,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/30_roze.tiles/preview.jpg"/>
@@ -462,6 +474,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-58.448" vlookat="-5.574" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/40-roze.tiles/preview.jpg"/>
@@ -493,6 +506,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-46.256" vlookat="-10.748" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/41_roze.tiles/preview.jpg"/>
@@ -535,6 +549,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-79.874" vlookat="3.041" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/46_roze.tiles/preview.jpg"/>
@@ -567,6 +582,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-136.041" vlookat="-17.632" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/ivan_chap_roze_roze.tiles/preview.jpg"/>
@@ -602,6 +618,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="17.707" vlookat="-13.199" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/ivane_rast_roze.tiles/preview.jpg"/>
@@ -640,6 +657,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="-31.043" vlookat="-3.886" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/25_roze.tiles/preview.jpg"/>
@@ -676,6 +694,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="167.391" vlookat="2.197" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/menare_chap.tiles/preview.jpg"/>
@@ -708,6 +727,7 @@ set(plugin[Littelplant-icon].alpha,1);
 set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
+set(plugin[MotionGesture].curent_pano,get(scene[get(xml.scene)].name));
 </action>
 <view hlookat="206.508" vlookat="12.476" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/menare_rast.tiles/preview.jpg"/>
