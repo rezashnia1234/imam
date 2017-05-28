@@ -93,13 +93,12 @@
 	set(layer[mobiledevice].y,40);
 	</action>
 
-<!--
+	                       
 	<view fovtype="VFOV" fov="60" fovmin="40" fovmax="110" vlookat="0" hlookat="150"/>
 		<preview url="%$mypath%/panos/07_roze.tiles/preview.jpg" />
 		<image>
 				<cube url="%$mypath%/panos/07_roze.tiles/mobile_%s.jpg"/>
 		</image>
--->
 		<hotspot name="show_menu" frimage="hotspots/startvr_fr.png" engimage="hotspots/startvr_eng.png" style="startstyle" />
 		<style name="startstyle" visible="false" distorted="true" vr_timeout="2000" depth="800" ty="0" enabled="false"/>
 		
@@ -135,11 +134,49 @@
 			
 		<events name="intro_go" onloadcomplete="letsgobaby()"/>
 		<action name="letsgobaby">
-		webvr.enterVR();
+		lookto(20,-20,90,smooth(50,50,25),false,true);
+		tween(layer[logo].alpha,1,5);
+		delayedcall(5,tween(layer[introbg].bgalpha,0.5,2);tween(layer[startvrbutton].alpha,1,2);tween(layer[startnormalbutton].alpha,1,2));
 		</action>
 	
+	<layer name="logo360images" url="360images.png" align="topright" y="20" x="20" scale="0.8" zorder="1000" keep="true" enabled="false"/>
 		
+	<layer name="introbg" type="container" bgcolor="0x000000" bgalpha="0" width="100%" height="100%" align="center">
 
+	<layer name="logo" url="logo.png" align="center" edge="bottom" alpha="0" y="50"/>
+	
+	<layer name="startnormalbutton" align="bottom" type="container" bgalpha="0.0" bgborder="1 0xffffff 1" width="300" height="44" alpha="0" y="175" bgcapture="true"
+	   onclick="
+	   tween(layer[logo].y,-500,2);
+	   tween(layer[logo].alpha,0,2);
+	   tween(layer[startnormalbutton].y,-200,2);
+	   tween(layer[startnormalbutton].alpha,0,2);
+	   tween(layer[startvrbutton].y,-200,2);
+	   tween(layer[startvrbutton].alpha,0,2);
+	   tween(layer[introbg].bgalpha,0,2);
+	   set(layer[menuthumb].visible,true);
+	   delayedcall(2,
+	   loadscene(scene_07_roze, null, MERGE|KEEPVIEW|KEEPMOVING, BLEND(1));
+	   if(webvr.isavailable == true,set(layer[webvr_button].alpha,1);set(layer[webvr_button].enabled,true));
+	   ;)">
+	   <layer name="startnormaltxt" url="plugins/textfield.swf" align="center" width="100%" height="100%" background="false" border="false" css="color:#ffffff;font-size:20px;font-family:Neo Sans Std;text-transform:uppercase;text-align:center;" enabled="false" vcenter="true"
+	   frdata="Utiliser sans casque" engdata="بدون هدست"/>
+	 </layer>
+	 		
+	<layer name="startvrbutton" align="bottom" type="container" bgcolor="0xffffff" bgalpha="1" bgborder="1 0xffffff 1" width="300" height="44" alpha="0" y="110" bgcapture="true"
+	   onclick="
+	   set(layer[menuthumb].visible,true);
+	   removelayer(introbg);
+	   removelayer(logo);
+	   set(hotspot[show_menu].visible,true);
+	   webvr.enterVR();
+		">
+	   <layer name="startvrtxt" url="plugins/textfield.swf" align="center" width="100%" height="100%" background="false" border="false" css="color:#D52A64;font-size:20px;font-family:Neo Sans Std;text-transform:uppercase;text-align:center;" enabled="false" vcenter="true"
+	   frdata="Commencer l'expérience" engdata="آغاز زیارت مجازی"/>
+	 </layer>
+	   
+	</layer>
+	
 
 	<action name="webvrnotavailable">
 	set(layer[startvrbutton].visible, false);
@@ -393,7 +430,7 @@ set(autorotate.enabled,'false');
 set(autorotate.waittime,8);
 set(IsAutoRotate,true);
 //if(startscene === null, copy(startscene,scene[0].name));
-loadscene(scene_07_roze, null, MERGE);
+//loadscene(scene_07_roze, null, MERGE);
  
 //if(scene.count GT 1, buildthumbs(); );
 </action>
@@ -543,12 +580,6 @@ set(plugin[Littelplant-icon].enabled,true);
 set(plugin[rotate-icon].alpha,1);
 set(plugin[rotate-icon].enabled,true);
 </action>
-
-<events name="intro_go" onloadcomplete="letsgobaby()"/>
-<action name="letsgobaby">
-webvr.enterVR();
-</action>
-
 <view hlookat="20.302" vlookat="-25.323" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
 <preview url="%$mypath%/panos/07_roze.tiles/preview.jpg"/>
 <image type="CUBE">
