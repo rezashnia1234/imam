@@ -11,14 +11,12 @@
     <link rel="stylesheet" type="text/css" href="css/template.css">
 
 	<script src="js/jquery-2.2.2.min.js"></script>
-	<!--<script src="js/console.log.js"></script>-->
+	<script src="js/console.log.js"></script>
     <script src="cordova.js"></script>
     <script src="js/jquery.md5.js"></script>
     <script src="js/fastclick.js"></script>
     <script src="js/hammer.min.js"></script>
     <script src="js/back_btn.js"></script>
-	<script src="js/notification.js"></script>
-
 	<script>
 		function init() {		
 			console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
@@ -58,7 +56,6 @@
 			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
 				document.addEventListener("backbutton", go_back_vtour, false);
 			}
-			register_notification();
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
 /////START DOWNLOAD//////////////////////////////////////////////////////////////////////
