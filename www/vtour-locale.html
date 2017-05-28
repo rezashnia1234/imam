@@ -37,17 +37,25 @@
 			//window.plugins.insomnia.keepAwake();
 			//window.plugins.insomnia.allowSleepAgain();
 			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
-				document.addEventListener("backbutton", go_back_vtour, false);
+				event.preventDefault();
 			}
-			register_notification();
-
+			setTimeout(function(){
+				function setBrightness(value) {
+					// value should be float in range from 0 to 1.
+					brightness.setBrightness(value, win, fail);
+				}
+				function getBrightness() {
+					// win([-1,0-1]) float 0-1 is a brightness level, -1 represents a system default
+					brightness.getBrightness( win, fail);
+				}
+				function win(status) {}
+				function fail(status) {}
+				window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+				setBrightness(1);
+				brightness.setKeepScreenOn(true);
+			}, 900);
 		}
 		$(document).ready(function() {
-			$(document).bind('keydown', function(event) {
-			  if (event.keyCode == 27) {
-				event.preventDefault();
-			  }
-			});
 			setTimeout(function(){
 				$(".mypreload").html("");
 			}, 800);
