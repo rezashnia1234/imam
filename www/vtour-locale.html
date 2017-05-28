@@ -37,7 +37,7 @@
 			//window.plugins.insomnia.keepAwake();
 			//window.plugins.insomnia.allowSleepAgain();
 			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
-				event.preventDefault();
+				//document.addEventListener("backbutton", go_back_vtour, false);
 			}
 			setTimeout(function(){
 				function setBrightness(value) {
