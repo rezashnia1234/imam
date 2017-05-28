@@ -92,7 +92,7 @@
 	
 	<events name="intro_go" onloadcomplete="letsgobaby()"/>
 	<action name="letsgobaby">
-	webvr.enterVR();
+	//webvr.enterVR();
 	</action>
 	
 	<view hlookat="20.302" vlookat="-25.323" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto"/>
