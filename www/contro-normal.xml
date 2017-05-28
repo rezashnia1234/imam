@@ -3,7 +3,17 @@
 	<krpano stagescale="calc:stagescale * 2" if="stagescale LT 1.0" devices="mobile" />
 
 	<!-- Skin Hotspot Style (the hotspots need a 'linkedscene' attribute to be clickable)-->
-	<style name="skin_hotspotstyle" url="skin/vtourskin_hotspot.png" distorted="true" vr_timeout="1000" zorder="1000" scale="0.5" edge="top" oy="0" onclick="pausevideo();if(linkedscene, tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1));  );" />
+	<style name="skin_hotspotstyle2" url="skin/vtourskin_hotspot.png" vr_timeout="1000" zorder="1000" scale="0.5" edge="top" oy="0" onclick="pausevideo();if(linkedscene, tween(scale,0.25,0.5); tween(oy,-20,0.5); tween(alpha,0,0.5); looktohotspot(); loadscene(get(linkedscene),null,MERGE,BLEND(1));  );" />
+	
+	<!--
+	<style name="skin_hotspotstyle" url="%SWFPATH%/images/hotspot.png" distorted="true" vr_timeout="2000" depth="2000" ty="0" onover="copy(hotspot[hs_vr_cursor2].ath,ath);copy(hotspot[hs_vr_cursor2].atv,atv);
+	if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);tween(hotspot[hs_vr_cursor2].depth,1000)" onout="tween(depth,2000);tween(hotspot[hs_vr_cursor2].depth,2000)" onloaded="txtadd(myclick,'loadscene(',get(linkedscene),',',get(vars),', MERGE|KEEPVIEW|KEEPMOVING, BLEND(1))');set(onclick,get(myclick))" />
+	-->
+	
+	<style name="skin_hotspotstyle" url="skin/vtourskin_hotspot.png" vr_timeout="1500" depth="2000" scale="0.5" edge="top" oy="0" onover="copy(hotspot[hs_vr_cursor2].ath,ath);copy(hotspot[hs_vr_cursor2].atv,atv);
+	if(webvr.isenabled,set(hotspot[hs_vr_cursor2].visible,true));tween(depth,1000);tween(hotspot[hs_vr_cursor2].depth,1000)" onout="tween(depth,2000);tween(hotspot[hs_vr_cursor2].depth,2000)" onloaded="txtadd(myclick,'loadscene(',get(linkedscene),',',get(vars),', MERGE|KEEPVIEW|KEEPMOVING, BLEND(1))');set(onclick,get(myclick))" />
+
+	
 	<textstyle name="ToolTips" 
 			   font="tahoma" fontsize="12" bold="false" italic="false" textcolor="0xFFFFFF" background="true" backgroundcolor="0x000000" border="false"
 			   alpha="0.85" blendmode="layer"

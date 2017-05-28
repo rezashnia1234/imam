@@ -1,5 +1,41 @@
 <krpano version="1.16" title="Virtual Tour" onstart="startup();" showerrors="true" logkey="true">
 	<include url="plugins/webvr.xml" />
+	<plugin name="WebVR"
+	        mobilevr_fake_support="true"
+			mobilevr_touch_support="true"
+			keep="true"
+	        onentervr="webvr_onentervr(); webvr_act_as_gyro_in_portrait_mode(true);"
+	        onexitvr="webvr_onexitvr();"
+	        />
+	<events name="webvr_events" keep="true" devices="html5"
+	        onresize.mobile="webvr_act_as_gyro_in_portrait_mode();"
+	        />
+	<action name="vr_menu_setvisibility">
+	</action>
+	<action name="webvr_act_as_gyro_in_portrait_mode">
+		if(device.mobile AND webvr.isenabled,
+			div(aspect, stagewidth, stageheight);
+			if(aspect != lastaspect OR '%1' == 'true',
+				copy(lastaspect, aspect);
+				if(stagewidth GT stageheight,
+					<!-- landscape orientation - use stereo rendering and a direct/fast gyro sensor mode -->
+					set(display.stereo, true);
+					set(webvr.mobilevr_sensor_mode, 3);
+					webvr.update();
+					tween(layer[webvr_rotate_to_landscape_request].alpha, 0.0, 0.0);
+				  ,
+					<!-- portrait orientation - use normal rendering and a smoother/slower gyro sensor mode -->
+					set(display.stereo, false);
+					set(webvr.mobilevr_sensor_mode, 1);
+					webvr.update();
+					tween(layer[webvr_rotate_to_landscape_request].alpha, 1.0);
+					delayedcall(3.0, tween(layer[webvr_rotate_to_landscape_request].alpha, 0.0, 1.0); );
+				  );
+			  );
+		  ,
+			set(lastaspect, 0);
+		  );
+	</action>
 	<plugin name="MotionGesture" url="%SWFPATH%/plugins/motion_gesture.js" keep="true" devices="html5" target_pano="scene_07_roze" curent_pano="scene_07_roze"  />
 
 
@@ -103,6 +139,9 @@
 		<cube url="%$mypath%/panos/07_roze.tiles/mobile_%s.jpg"/>
 	</image>
  
+	<hotspot name="spot2222222222222221" style="skin_hotspotstyle" ath="20.302" atv="-27.323" linkedscene="scene_06_roze"/>
+	
+	
 	<hotspot name="spot1" style="skin_hotspotstyle" ath="14.686" atv="4.054" linkedscene="scene_06_roze"/>
 	<hotspot name="spot4" style="skin_hotspotstyle" ath="112.318" atv="0.547" linkedscene="scene_21_roze"/>
 	<hotspot name="spot5" style="skin_hotspotstyle" ath="71.777" atv="-9.040" linkedscene="scene_ivane_rast_roze"/>

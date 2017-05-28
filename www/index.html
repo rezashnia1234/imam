@@ -36,19 +36,27 @@
 			function go_back_index() {
 				navigator.app.exitApp();
 			}
-		}
-		$(document).ready(function() {
-			if(window.localStorage.getItem('pano_localPath') == null)
-			{
-				window.location.href = "download.html";
-			}
-			else
-			{
-				window.location.href = "vtour-locale.html";
-			}
+			setTimeout(function(){
+				window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+				setBrightness(1);
+		        // prevents sleep
+				brightness.setKeepScreenOn(true);
+				// returns normal behavior
+				//pluginService.brightness.setKeepScreenOn(false);
+			}, 900);
 			setTimeout(function(){
 				//$(".mypreload").html("");
-			}, 800);
+				if(window.localStorage.getItem('pano_localPath') == null)
+				{
+					window.location.href = "download.html";
+				}
+				else
+				{
+					window.location.href = "vtour-locale.html";
+				}
+			}, 1100);
+		}
+		$(document).ready(function() {
 		});
 
 	</script>
