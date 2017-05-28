@@ -38,7 +38,7 @@
 			var mc = new Hammer(document.body);
 			mc.on("swiperight", function(ev) {
 				brightness.setKeepScreenOn(false);
-				go_back_vtour();
+				goto_home();
 			});
 
 		}
@@ -50,11 +50,9 @@
 				brightness.setKeepScreenOn(true);
 			}, 1000);
 			
-			var networkState = navigator.connection.type;
-
 			FastClick.attach(document.body);
 			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
-				document.addEventListener("backbutton", go_back_vtour, false);
+				document.addEventListener("backbutton", goto_home, false);
 			}
 /////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -80,9 +78,22 @@
 			console.log("window.localStorage.getItem('download_address'):" + window.localStorage.getItem('download_address'));
 			console.log("window.localStorage.getItem('downloaded_files'):" + window.localStorage.getItem('downloaded_files'));
 			
-			download_zip('http://dlsmgroup.ir/temp/panos.zip','panos');
-			//download_zip('http://192.168.0.9/panos.zip','panos');
-
+			
+			var networkState = navigator.connection.type;
+			if(networkState == Connection.NONE) {
+				navigator.notification.alert(
+					'برای مشاهده این صفحه به اینترنت نیاز دارید',  // message
+					alertDismissed,         // callback
+					'توجه',            // title
+					'تائید'                  // buttonName
+				);
+				function alertDismissed(){};
+			}
+			else
+			{
+				download_zip('http://dlsmgroup.ir/temp/panos.zip','panos');
+				//download_zip('http://192.168.0.9/panos.zip','panos');
+			}
 
 		}
 /**/
@@ -103,7 +114,7 @@
 			//alert("complete cached : " + data.cached);
 			navigator.notification.alert(
 				'فرایند دانلود با موفقیت به اتمام رسید.',  // message
-				go_back_vtour,         // callback
+				goto_home,         // callback
 				'توجه',            // title
 				'تائید'                  // buttonName
 			);
@@ -128,7 +139,7 @@
 			brightness.setKeepScreenOn(false);
 			navigator.notification.alert(
 				'لغو دانلود فایل',  // message
-				go_back_vtour,         // callback
+				goto_home,         // callback
 				'توجه',            // title
 				'تائید'                  // buttonName
 			);
