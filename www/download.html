@@ -101,15 +101,17 @@
 			//alert("complete : " + data.localPath);
 			//alert("complete cached : " + data.cached);
 			navigator.notification.alert(
-				'تمت عملية التحميل بنجاح',  // message
+				'فرایند دانلود با موفقیت به اتمام رسید.',  // message
 				go_back_vtour,         // callback
-				'اعلان',            // title
-				'نعم'                  // buttonName
+				'توجه',            // title
+				'تائید'                  // buttonName
 			);
 		});
 
 		sync.on('error', function(e) {
 			// e.message
+			console.log(e);
+			console.log(e.message);
 			alert("error : " + e.message);
 		});
 
@@ -124,10 +126,10 @@
 			//$('.progress-bar-parent').css("display","none");
 			brightness.setKeepScreenOn(false);
 			navigator.notification.alert(
-				'تم الغاء التحميل',  // message
+				'لغو دانلود فایل',  // message
 				go_back_vtour,         // callback
-				'تنبيه',            // title
-				'نعم'                  // buttonName
+				'توجه',            // title
+				'تائید'                  // buttonName
 			);
 		});
 
@@ -182,9 +184,9 @@
 			<div id="status"></div>
 			<span class="progress-bar-percent" style="width: 2%"></span>
 			<div id="descripion">
-				<div class="first">التحمیل</div> <div class="hajm">40 mb</div>
+				<div class="first">دانلود</div> <div class="hajm">58 mb</div>
 			</div>
-			<div id="abort_box"><input type="button" id="abort" value="إلغاء" /></div>
+			<div id="abort_box"><input type="button" id="abort" value="کنسل" /></div>
 		</div>
 	</div>
 

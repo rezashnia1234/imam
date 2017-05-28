@@ -1,241 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
     <title>بسم الله الرحمن الرحيم</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/template.css">
 
+	<style>
+		@-ms-viewport { width: device-width; }
+		@media only screen and (min-device-width: 800px) { html { overflow:hidden; } }
+		html { height:100%; }
+		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
+		iframe {border: 0px solid transparent !important;width: 100%;}
+	</style>
 	<script src="js/jquery-2.2.2.min.js"></script>
+	<!-- <script src="js/console.log.js"></script> -->
     <script src="cordova.js"></script>
+    <script src="js/jquery.md5.js"></script>
     <script src="js/fastclick.js"></script>
     <script src="js/hammer.min.js"></script>
-    <script src="js/notification.js"></script>
-	<script type="text/javascript" src="js/iscroll.js"></script>
+    <script src="js/back_btn.js"></script>
+	<script src="js/notification.js"></script>
 	<script>
-		var does_we_have_intenet = true;
-		function init() {
-			var pano_url;
+		function init() {		
 			console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
 			document.addEventListener("deviceready", onDeviceReady, false);
-			/**** added by mahdi *********/
-			if(isRetina())
-			{
-				$('.retina').each( function(i) {
-					var back = $(this).css('background-image');
-					back = back.replace("/low", "/high");
-					$(this).css('background-image',back);
-				});
-				$('.retina:before').each( function(i) {
-					var back = $(this).css('background-image');
-					back = back.replace("/low", "/high");
-					$(this).css('background-image',back);
-				});
-			}
-// 			$('.smm_menu > div').fancy_scroll({
-// 			      innerWrapper: ".smm_menu ul",
-// 			      animation: "bounce",
-// 			  		bounceDistance: 40,
-// 			  		animDuration: "0.3s",
-// 			  		animEasing: "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-// 			    });
-			var myScroll = new iScroll('smm_wrapper', { hideScrollbar: true, bounce : "enable", vScrollbar: false });
-			/*****************************/
-		}
-
-		function goto_next_page(href,need_internet) {
-			if (window.cordova)
-			{
-				var networkState = navigator.connection.type;
-				if ((networkState == Connection.NONE) && need_internet) {
-					navigator.notification.alert(
-						'يجب عليك الاتصال بالانترنت',  // message
-						alertDismissed,         // callback
-						'تنبيه',            // title
-						'نعم'                  // buttonName
-					);
-					function alertDismissed(){};
-				}
-				else
-				{
-					if ( device.platform == 'iOS' )
-					{
-						var options_back = {
-						  "direction"		:	"left", // "up", // 'left|right|up|down', default 'left' (which is like 'next')
-						  "duration"		:	700, // in milliseconds (ms), default 400
-						  "androiddelay"	:	130, // same as above but for Android, default 70
-						  "href"			:	href //"adab.html"
-						};
-						window.plugins.nativepagetransitions.slide(
-						  options_back,
-						  function (msg) {console.log("success: " + msg)}, // called when the animation has finished
-						  function (msg) {console.log("error: " + msg)} // called in case you pass in weird values
-						);
-					}
-					else
-					{
-						var options_back = {
-						  "direction"		:	"left", // "up", // 'left|right|up|down', default 'left' (which is like 'next')
-						  "duration"		:	900, // in milliseconds (ms), default 400
-						  "iosdelay"		:	110,
-						  "androiddelay"	:	280, // same as above but for Android, default 70
-						  "href"			:	href //"adab.html"
-						};
-						window.plugins.nativepagetransitions.slide(
-						  options_back,
-						  function (msg) {console.log("success: " + msg)}, // called when the animation has finished
-						  function (msg) {console.log("error: " + msg)} // called in case you pass in weird values
-						);
-					}
-				}
-			} else {
-				window.location.href = href;
-			}
 
 		}
-
 		function onDeviceReady() {
-			var networkState = navigator.connection.type;
-			if (networkState == Connection.NONE) {
-				does_we_have_intenet = false;
+			//window.plugins.insomnia.keepAwake();
+			//window.plugins.insomnia.allowSleepAgain();
+			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
+				document.addEventListener("backbutton", goto_home, false);
 			}
-			FastClick.attach(document.body);
-			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
-				document.addEventListener("backbutton", go_back_index, false);
-			}			
-			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
-				$(".PrayTimes_page").attr("onclick","goto_next_page('salat-gps.html',false);");
-			}		
-			
-			if(window.localStorage.getItem('uuid') == null)
-				window.plugins.uniqueDeviceID.get(uniqueDeviceIDsuccess_index, uniqueDeviceIDfail_index);
+			register_notification();
+		}
+		$(document).ready(function() {
+			if(window.localStorage.getItem('pano_localPath') == null)
+			{
+
+			}
 			else
 			{
-				
+				$("#shkb_footer.need_download").css("display","none");
+				$("#shkb_footer.downloaded").css("display","block");
 			}
-			register_notification_home();
-		}
-
-		$(window).load(function() {		
 			setTimeout(function(){
 				$(".mypreload").html("");
-			}, 1000);
-			
-			var ulwidth = $('.smm_menu ul').height()*10/11;
-			var divwidth = $('.smm_menu > div').height();
-
-			$('.smm_menu ul').css('top',(divwidth-ulwidth));
-			setTimeout(function(){
-				$('.smm_menu ul').css("top","0");
-			}, 1500);
+			}, 800);
 		});
 
-		function go_back_index() {
-			navigator.app.exitApp();
-			/*
-			navigator.notification.confirm(
-				'هل حقا تريد الحروج من  التطبيق',	// message
-				onExitConfirm,								// callback
-				'انتباه',										// title
-				['نعم','كلا']								// buttonName
-			);
-			*/
-		}
-		function onExitConfirm(buttonIndex) {
-			if(buttonIndex==1)
-			{
-				navigator.app.exitApp();
-				/*
-				if (navigator && navigator.app) {
-					navigator.app.exitApp();
-				} 
-				else {
-					if (navigator && navigator.device) {
-						navigator.device.exitApp();
-					}
-				}
-				*/
-			}
-			else
-			{
-				
-			}
-		}
-		function isHighDensity(){
-			return ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 124dpi), only screen and (min-resolution: 1.3dppx), only screen and (min-resolution: 48.8dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3)').matches)) || (window.devicePixelRatio && window.devicePixelRatio > 1.3));
-		}
-		function isRetina(){
-			return ((window.matchMedia && (window.matchMedia('only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-resolution: 75.6dpcm)').matches || window.matchMedia('only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)').matches)) || (window.devicePixelRatio && window.devicePixelRatio >= 2)) && /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
-		}
-		$(document).ready(function(){
-
-		});
-		
-		function need_internet(){
-			if(does_we_have_intenet)
-				return true;
-			else
-				return false;
-		};
-		function need_internet_alert(){
-			navigator.notification.alert(
-				'يجب عليك الاتصال بالانترنت',  // message
-				alertDismissed,         // callback
-				'تنبيه',            // title
-				'نعم'                  // buttonName
-			);
-			function alertDismissed(){};
-		};
-		
-		function uniqueDeviceIDsuccess_index(uuid)
-		{
-			window.localStorage.setItem('uuid',uuid);
-		};
-		function uniqueDeviceIDfail_index(uuid)
-		{
-			//alert("uniqueDeviceIDfail" + uuid);
-		};
-	</script>	
-
-		
-		
-		
-<style>
-
-
-</style>	
+	</script>
 </head>
-<body onload="init();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" id="body" class="smm_body retina">
-	<div class="bg" ></div>
-	<div class="container " id="container" >
-		<div id="ajax" class="mypreload">
-			<div style="z-index: 1000; border: medium none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: #1e92c4; opacity: 1; cursor: default; position: fixed;overflow:visible;" class="blockUI blockOverlay"></div>
-			<div style="z-index: 1011; position: fixed; padding: 0px; margin: 0px; width: 100%; top: 28%; left: 0%; text-align: center;border: medium none;overflow:visible;" class="blockUI blockMsg blockPage"><img src="images/preloader.gif"></div>
-			<div style="z-index: 1012; position: fixed; padding: 0px; margin: 0px; width: 100%; top: 50%; left: 0%; text-align: center;border: medium none;overflow:visible;height:500px;" class="blockUI blockMsg blockPage"><img src="images/loading.png" width="70%"></div>
-		</div>
-		<div class="smm_content">
-			<div class="smm_title retina"></div>
-			<div class="smm_menu">
-				<div id="smm_wrapper">
-					<ul class="retina">
-						<li onclick="goto_next_page('news.html',true);" title="news" class="goto222 internet"></li>
-						<li onclick="goto_next_page('picturesCategories.html',true);" title="gallery" class="goto internet"></li>
-						<li onclick="goto_next_page('live.html',true);" title="live broadcast" class="goto internet"></li>
-						<li onclick="goto_next_page('video.html',true);" title="video" class="goto internet"></li>
-						<li onclick="goto_next_page('radio.html',true);" title="radio" class="goto internet"></li>
-						<li onclick="goto_next_page('map.html',false);" title="map" class="goto" ></li>
-						<li onclick="goto_next_page('adab.html',false);" title="adab al-ziyarat" class="goto" ></li>
-						<li onclick="goto_next_page('salat.html',false);" title="PrayTimes" class="goto PrayTimes_page" ></li>
-						<li onclick="goto_next_page('ziarat.html',true);" title="naeb al-ziyarat" class="goto internet"></li>
-						<li onclick="goto_next_page('vtour-demo-day.html',false);" title="vtour" class="goto" ></li>
-						<li onclick="goto_next_page('esdarat.html',true);" title="majalat" class="goto internet"></li>
-						<!--<li style="background-color: transparent ! important;"></li>-->
-					</ul>
-				</div>
-			</div>
-		</div>
-			
+<style>
+#shkb_header {
+  background-image: url("images/vtour-demo/day-back.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  height: 32vw;
+  left: 0;
+  position: absolute;
+  width: 19vw;
+  z-index:999;
+}
+#shkb_footer {
+  background-image: url("images/vtour-demo/demo-footer.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+  height: 30vw;
+  left: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index:999;
+}
+#shkb_footer.downloaded {
+  background-image: url("images/vtour-demo/demo-footer2.png");
+}
+#shkb_btn1{
+	position:absolute;
+	left:0;
+	top:0;
+	height:50%;
+	width:100%;
+	display:block;
+	z-index:999;
+}
+#shkb_btn2{
+	position:absolute;
+	left:0;
+	bottom:0;
+	height:50%;
+	width:100%;
+	display:block;
+	z-index:999;
+}
+</style>
+<body onload="init();" style="background-color:#ffffff;">
+	<div id="ajax" class="mypreload">
+		<div style="z-index: 1000; border: medium none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: #1e92c4; opacity: 1; cursor: default; position: fixed;overflow:visible;" class="blockUI blockOverlay"></div>
+		<div style="z-index: 1011; position: fixed; padding: 0px; margin: 0px; width: 100%; top: 28%; left: 0%; text-align: center;border: medium none;overflow:visible;" class="blockUI blockMsg blockPage"><img src="images/preloader.gif"></div>
+		<div style="z-index: 1012; position: fixed; padding: 0px; margin: 0px; width: 100%; top: 50%; left: 0%; text-align: center;border: medium none;overflow:visible;height:500px;" class="blockUI blockMsg blockPage"><img src="images/loading.png" width="70%"></div>
 	</div>
+
+	<script src="tour.js?0"></script>
+	<!--<div id="gyro" style="">00000000000000000</div>-->
+	<div id="shkb_footer" class="need_download" >
+		<a id="shkb_btn1" href="#" onclick="goto_perv_page('vtour-online.html',false);" ></a>
+		<a id="shkb_btn2" href="#" onclick="goto_perv_page('download.html',false);" ></a>
+	</div>
+	<div id="shkb_footer" class="downloaded" style="display: none;" >
+		<a id="shkb_btn1" href="#" onclick="goto_perv_page('vtour-online.html',false);" ></a>
+		<a id="shkb_btn2" href="#" onclick="goto_perv_page('vtour-locale.html',false);" ></a>
+	</div>
+	<div id="shkb_header" style="" >
+		<a id="shkb_btn1" href="#" onclick="goto_perv_page('index.html',false);" ></a>
+		<a id="shkb_btn2" href="#" onclick="goto_perv_page('vtour-demo-night.html',false);" ></a>
+	</div>
+
+	<div id="pano" style="width:100%;height:100%;">
+		<noscript><table style="width:100%;height:100%;"><tr style="valign:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
+		<script>
+			embedpano({swf:"tour.swf", xml:"tour-demo-day.xml", target:"pano", html5:"only", passQueryParameters:true});
+		</script>
+	</div>
+
 </body>
 </html>
