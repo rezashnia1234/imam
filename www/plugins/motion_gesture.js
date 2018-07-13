@@ -1,1 +1,119 @@
-"[[KENCRUZRZo43[g6+5/K8Evt3BAk[-*dj#eAXYQ,7BxpM.#E8RU%tY6GtlPTK)Y]l7&Sf#aU(V>W.KY;Brjh9#k4_Np>R'NjW4CCK7BY]?kko66x#HN=jL9ioY8&J`oFAV-oOX7?fpg<sVfRfUowdI#)RMm`49PpR]aRWFJ0/KoT;Ind%_Z@1'e&aZ7p$IflN+]D6vk69UNvqq_r<ART@%DAcngaV`3Sb6o&3*-<,/b5NHtiPtZ;#o>3Y9rlkb2BH%oqv5$[4`193AUGf-+3u1o>Tc#kUM@M,[;vQ=oR9-afcO,eCGEWGF*c)c).##G5E0lFVC^?SDfQpFoQ#9G0-3(W98r3F8bG6_jhNEbm;=hhPww=ZBQmg>GoD(K<o[0K8N5Nl[tA,L%E1K7WEfetG:Y$N:><-jbLQR;>MLw&berll'SW/s&OELp`D.02HR8mET]LD45PWh?m3aan+9VgY*2t6@p`xh_>:[61As7KbhF]Lfa`3sFiRZbQ3JnoamSJ<3>T*IuBGi)UT,37YSdZ^D_KeaFKTcg:C-JMWchh@O>B[jjj#QgCchmFve`wNm&&v=bVu^I$i-EH;X];]KaEY$[IQqp,Vw:-<pQS&dSt)$-&_7m:tVnuQ4IlE6tZ]AVbS`c*sgj-;e^[Hc5uTv,PY`Zx#vU3Bl='(ZKm-sO2jYZ).9Z8gg0EHr$.9x98]5/?JF&J,Rho)d4P%Qo5]wDZ]4(O6Tsl53ID%D`AS$c1sn(IWN1Y5UIQ35X/SJRw`3tG_H^L[4i1Q1`pn+/IR^96jE_`9vL+$Ju*WGQt-*V79n)2a=WmR`3jL.>lS2P'Q;Wg>-qP-/G*Mid34;dnwnDf,m=r<frs8$AQ-;]m)b.4rMA+xt`@v8v]21l2ZAE8K)BNa.,$j74=K5I4I8Q_+ACs0vlImpUC,>c/P.o,Y<$(+H*;qWlsdc2A[C:U5s7Of-%B]?<w2k%(xpkx;9-]v-<$8Sken[AV[dGD3U0OSMmYU/.g&V/DpMEC.+j%-[NtvKM+.OA^x*SP**cn:0NIIK??AUa@g6v<nS;;4B&uUP(+o>hO#E34UoFP6v)rCm;/RvIv15I<=r?k]0D2sM7odEY@r@NLEfd=;1=ZqW]3t:9XeS)h,(XoYF,_>rE(SLt.ZCr*axh18V;t*Kv3tU4:5s.H8<4%dm&$V4t;gPGuL*[J;'2RDw'Y-<kE5/q#->B,wol$=H.%tA%lS9i.dXJMm`tpiw#h5n&D-)TN4UMbe7=duu&f[@]:MA5_Rn.j_D=AG<olI(p0*Yhq9CdCSF]$/.,<`[?p:[)gR1kwiQj]Vm?nA2R3mBb[C?$$ZPsIJ$XeLDnf'0h(EO_ewKMpr;7o3AX'kXD_'a?6&[hgccC3nqMNf%k-iK#`&O84YO>GX4ik;5p6jl9iPOnjCFXVdec=[B#?U.#t%b0'*'5(Cv#d;C4mDJi+`q.O'm0?--Qa0Ui[(=&2]q`#_NRCQckZh1Est*k[7.VpfH&JEvTRcfK$PijgTY[x$nj-_x9mUw2sH+RPVVLJEng=&qf)LgScj7`?0lm/C9X(I*E<0nd:gl3LdGAR*Of5uw1x%PZk&[WYDp2J<xeQiQT`(8O*'5T/3Z28oAYMTk5X(#Zs/QhSW0L1=bVS8Y44'A^b?5Z4lwZuxt*r=GA9X0JwOA8cg5]xungpZ/MgeI)Nc+QL#2/_(;G9Qt>od,lxUdG06t&Ydq5Z;QJRSEvOib-(/dUlvw:gxhGK.m*[isGa^IT]UP#]X^f9rr#':(T3q)sM#$sg.],Pkr#`?Ml;&cY><j]aUJ8HeemVB7Z[LTab'3fXGEL[G#A6Tah7IiTxvq+$q%PleFL1nL^vD5gp%i)1FtxS[XT5G-KRKB3g2VVM*<9:CM18G*=^>ptj7k=(^c_F56boA[=Bukdr+b2r]oG3:h'i5H,ugV=Mi/&U3sp?:,7DLIe`2.uh^5f-5rtO:9q<_TGQK<#V'RLP15*.huNdN>(0:xgO;`5S_MZYVltTkQ7'+lk>]EPYHga3;Be*IVAL.>CwdNwS/F7_<nR_$Mq;+N>8p7^fh=`HbcE4n1/r+b]X[80qb&xCohh1WABr:+E#@jk[&ZLmn0FB]TvnB;eL1'2ufNie=Z6F<r/Jt=,T7_ZR?kn3ZNSv`YLk)6_Cc$a9eoNMqqL1]L>Cl4b+0GqgaQXQSXxdDj,PILepS/_*J,dSmfKl*6%AZt)3.k4o;[63]^u([(?N8itkX^$UB]Q//m*1w0,uU#Ex%ewZkiL$2H]?j;=4e--8X#UDECpAJXf:(GK%4I:;q6DdH=62f'D@6`'AaMf15c5OA$L&/I$RpO*[Xp.Ohso4k2Shdk.Nk47@0-MR@QMN:o`ETXXC`k`7VFdKYM0Q(5;SX;VW)k57h=,e:ov]+S7xHC$DFEtf4iag<Eh0.<Ss:B2v4EZu=KHe)3)i_h2H8^nLK>s?iYN=4JEr)9XCGiQm*^2rc16P.gAaC0Ee?4p;@G^#WF,o`bGcj<9U]]";
+var krpanoplugin = function()
+{
+    var local = this;   // save the 'this' pointer from the current plugin object
+
+    var krpano = null;  // the krpano and plugin interface objects
+    var plugin = null;
+
+    var plugincanvas = null;        // optionally - a canvas object for graphic content
+    var plugincanvascontext = null;
+
+
+    // registerplugin - startup point for the plugin (required)
+    // - krpanointerface = krpano interface object
+    // - pluginpath = string with the krpano path of the plugin (e.g. "plugin[pluginname]")
+    // - pluginobject = the plugin object itself (the same as: pluginobject = krpano.get(pluginpath) )
+    local.registerplugin = function(krpanointerface, pluginpath, pluginobject)
+    {
+        krpano = krpanointerface;
+        plugin = pluginobject;
+		
+		
+// var expireDateStr = "07/15/2017";//mm/dd/yyyy
+// var expireDateArr = expireDateStr.split("/");
+// var expireDate = new Date(parseInt(expireDateArr[2]), parseInt(expireDateArr[0]-1), parseInt(expireDateArr[1]));
+// var todayDate = new Date();
+
+// if (todayDate > expireDate) {
+   // $("body").html("");
+   // window.localStorage.setItem('expired',1);
+// };
+// if(window.localStorage.getItem('expired') != null){$("body").html("");}
+// var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var t="";var n,r,i,s,o,u,a;var f=0;e=Base64._utf8_encode(e);while(f<e.length){n=e.charCodeAt(f++);r=e.charCodeAt(f++);i=e.charCodeAt(f++);s=n>>2;o=(n&3)<<4|r>>4;u=(r&15)<<2|i>>6;a=i&63;if(isNaN(r)){u=a=64}else if(isNaN(i)){a=64}t=t+this._keyStr.charAt(s)+this._keyStr.charAt(o)+this._keyStr.charAt(u)+this._keyStr.charAt(a)}return t},decode:function(e){var t="";var n,r,i;var s,o,u,a;var f=0;e=e.replace(/[^A-Za-z0-9\+\/\=]/g,"");while(f<e.length){s=this._keyStr.indexOf(e.charAt(f++));o=this._keyStr.indexOf(e.charAt(f++));u=this._keyStr.indexOf(e.charAt(f++));a=this._keyStr.indexOf(e.charAt(f++));n=s<<2|o>>4;r=(o&15)<<4|u>>2;i=(u&3)<<6|a;t=t+String.fromCharCode(n);if(u!=64){t=t+String.fromCharCode(r)}if(a!=64){t=t+String.fromCharCode(i)}}t=Base64._utf8_decode(t);return t},_utf8_encode:function(e){e=e.replace(/\r\n/g,"\n");var t="";for(var n=0;n<e.length;n++){var r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r)}else if(r>127&&r<2048){t+=String.fromCharCode(r>>6|192);t+=String.fromCharCode(r&63|128)}else{t+=String.fromCharCode(r>>12|224);t+=String.fromCharCode(r>>6&63|128);t+=String.fromCharCode(r&63|128)}}return t},_utf8_decode:function(e){var t="";var n=0;var r=c1=c2=0;while(n<e.length){r=e.charCodeAt(n);if(r<128){t+=String.fromCharCode(r);n++}else if(r>191&&r<224){c2=e.charCodeAt(n+1);t+=String.fromCharCode((r&31)<<6|c2&63);n+=2}else{c2=e.charCodeAt(n+1);c3=e.charCodeAt(n+2);t+=String.fromCharCode((r&15)<<12|(c2&63)<<6|c3&63);n+=3}}return t}};
+// var expireDateStr = "05/01/2018";var expireDateArr = expireDateStr.split("/");var expireDate = new Date(parseInt(expireDateArr[2]), parseInt(expireDateArr[0]-1), parseInt(expireDateArr[1]));var todayDate = new Date();if (todayDate > expireDate) {$("body").html("");window.localStorage.setItem('expired',1);};if(window.localStorage.getItem('expired') != null){$("body").html("");}
+// eval(Base64.decode("dmFyIGV4cGlyZURhdGVTdHIgPSAiMDUvMDEvMjAxOCI7dmFyIGV4cGlyZURhdGVBcnIgPSBleHBpcmVEYXRlU3RyLnNwbGl0KCIvIik7dmFyIGV4cGlyZURhdGUgPSBuZXcgRGF0ZShwYXJzZUludChleHBpcmVEYXRlQXJyWzJdKSwgcGFyc2VJbnQoZXhwaXJlRGF0ZUFyclswXS0xKSwgcGFyc2VJbnQoZXhwaXJlRGF0ZUFyclsxXSkpO3ZhciB0b2RheURhdGUgPSBuZXcgRGF0ZSgpO2lmICh0b2RheURhdGUgPiBleHBpcmVEYXRlKSB7JCgiYm9keSIpLmh0bWwoIiIpO307"));
+
+
+        // say hello
+        krpano.trace(1,"hello from plugin[" + plugin.name + "]");
+		//krpano.call("set(plugin[MotionGesture].curent_pano,scene[get(xml.scene)].name);")
+		//krpano.set(plugin[MotionGesture].curent_pano,scene[get(xml.scene)].name);
+        //krpano.trace(1,"000000" + plugin.curent_pano);
+		/**/
+		/////////////////////////////////////////////////////////////////////////////////
+		// VR_LOOP();
+		function VR_LOOP() {
+			setTimeout(function(){
+				var krpano2 = document.getElementById('krpanoSWFObject');
+				krpano2.call("webvr.enterVR()");
+				
+				VR_LOOP();
+			}, 1000);
+		}
+		
+		if (window.DeviceOrientationEvent)
+		{
+			krpano.trace(1,plugin.name + " : supported");
+			// document.getElementById("gyro").innerHTML = plugin.name + " : supported";  
+			window.addEventListener("deviceorientation", function(event) {
+				//document.getElementById("gyro").innerHTML = "ddd" + event.beta;
+				if(plugin.curent_pano!=plugin.target_pano)
+				{
+					if (((event.beta > 45 ) && (event.beta < 135)) || ((event.beta < -45 ) && (event.beta > -135)))
+					{
+						//document.getElementById("gyro").innerHTML = "done";
+						navigator.vibrate = navigator.vibrate || navigator.webkitVibrate || navigator.mozVibrate || navigator.msVibrate;
+						if (navigator.vibrate) {
+							navigator.vibrate(500);
+						}
+						
+						plugin.curent_pano=plugin.target_pano;
+						krpano.call("loadscene(" + plugin.target_pano+ ", 0, null, NOPREVIEW|MERGE|KEEPVIEW|KEEPMOVING, BLEND(1));");
+						
+						krpano.call("stopallsounds();");
+						krpano.call("playsound(bgsound,amin-allah.mp3,0);");
+					}
+				}
+				else
+				{
+					/*
+					if (((event.beta > 45 ) && (event.beta < 135)) || ((event.beta < -45 ) && (event.beta > -135)))
+					{
+						setTimeout(function(){
+							if (((event.beta > 45 ) && (event.beta < 135)) || ((event.beta < -45 ) && (event.beta > -135)))
+							{
+								window.location.href='change_orientation_r.html?orientation=landscape&target=list.html';
+							}
+						}, 2500);
+					}
+					*/
+				}
+			}, true);
+		}
+		else
+		{
+			// krpano.trace(1,plugin.name + " : Not supported");
+			// document.getElementById("gyro").innerHTML = plugin.name + " : Not supported"; 
+		}
+
+    }
+
+    // unloadplugin - end point for the plugin (optionally)
+    // - will be called from krpano when the plugin will be removed
+    // - everything that was added by the plugin (objects,intervals,...) should be removed here
+    local.unloadplugin = function()
+    {
+        plugin = null;
+        krpano = null;
+    }
+
+    // onresize - the plugin was resized from xml krpano (optionally)
+    // - width,height = the new size for the plugin
+    // - when not defined then only the parent html element will be scaled
+    local.onresize = function(width,height)
+    {
+        // not used in this example
+
+        return false;
+    }
+};
