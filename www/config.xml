@@ -52,8 +52,11 @@
 	<plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
-	<plugin name="cordova-plugin-file" source="npm" />
-	<plugin name="cordova-plugin-file-transfer" source="npm" />
+	<plugin spec="https://github.com/apache/cordova-plugin-file.git#5e12b5e" />
+
+	<plugin name="cordova-plugin-file" spec="6.0.1" />
+	<plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
+
 	<plugin spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-media.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
