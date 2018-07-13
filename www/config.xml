@@ -52,18 +52,25 @@
 	<plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-file.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-media.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-network-information.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-splashscreen.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-vibration.git" source="git" />
     <!-- <gap:plugin name="org.apache.cordova.device-motion" source="npm" /> -->
     <!-- <gap:plugin name="org.apache.cordova.device-orientation" source="npm" /> -->
     <!-- <gap:plugin name="org.apache.cordova.dialogs" source="npm" /> -->
-    <gap:plugin name="org.apache.cordova.file" source="npm" />
-    <gap:plugin name="org.apache.cordova.file-transfer" source="npm" />
+    <!-- <gap:plugin name="org.apache.cordova.file" source="npm" /> -->
+    <!-- <gap:plugin name="org.apache.cordova.file-transfer" source="npm" /> -->
     <!-- <gap:plugin name="org.apache.cordova.geolocation" source="npm" /> -->
     <!--<gap:plugin name="org.apache.cordova.globalization" source="npm" />-->
-    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
-	<gap:plugin name="org.apache.cordova.media" source="npm" />
-    <gap:plugin name="org.apache.cordova.network-information" source="npm" />
-    <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
-    <gap:plugin name="org.apache.cordova.vibration" source="npm" />
+    <!-- <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" /> -->
+	<!-- <gap:plugin name="org.apache.cordova.media" source="npm" /> -->
+    <!-- <gap:plugin name="org.apache.cordova.network-information" source="npm" /> -->
+    <!-- <gap:plugin name="org.apache.cordova.splashscreen" source="npm" /> -->
+    <!-- <gap:plugin name="org.apache.cordova.vibration" source="npm" /> -->
 
 	
     <!-- Third party plugins -->
