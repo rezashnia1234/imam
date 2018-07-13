@@ -54,7 +54,7 @@
 	<plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
 	<!-- <plugin spec="https://github.com/apache/cordova-plugin-file.git#5e12b5e" /> -->
 
-	<plugin spec="https://github.com/apache/cordova-plugin-file.git#957e1dc" />
+	<plugin spec="https://github.com/apache/cordova-plugin-file.git#8568bab" />
 	<plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git#c9ac8e1" />
 	<!-- <plugin name="cordova-plugin-file-transfer" spec="1.7.1" /> -->
 
