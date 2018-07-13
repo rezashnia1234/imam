@@ -47,10 +47,14 @@
     <!--<gap:plugin name="org.apache.cordova.battery-status" source="npm" />-->
     <!--<gap:plugin name="org.apache.cordova.media-capture" source="npm" />-->
     <!-- <gap:plugin name="org.apache.cordova.console" source="npm" /> -->
-    <gap:plugin name="org.apache.cordova.device" source="npm" />
-    <gap:plugin name="org.apache.cordova.device-motion" source="npm" />
-    <gap:plugin name="org.apache.cordova.device-orientation" source="npm" />
-    <gap:plugin name="org.apache.cordova.dialogs" source="npm" />
+    <!-- <gap:plugin name="org.apache.cordova.device" source="npm" /> -->
+	<plugin spec="https://github.com/apache/cordova-plugin-device.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
+    <!-- <gap:plugin name="org.apache.cordova.device-motion" source="npm" /> -->
+    <!-- <gap:plugin name="org.apache.cordova.device-orientation" source="npm" /> -->
+    <!-- <gap:plugin name="org.apache.cordova.dialogs" source="npm" /> -->
     <gap:plugin name="org.apache.cordova.file" source="npm" />
     <gap:plugin name="org.apache.cordova.file-transfer" source="npm" />
     <!-- <gap:plugin name="org.apache.cordova.geolocation" source="npm" /> -->
