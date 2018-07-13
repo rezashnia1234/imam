@@ -16,8 +16,8 @@
     -->
     <preference name="permissions"                value="none"/>
 
-    <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"			  value="cli-7.0.1" />
+    <!-- Customize your app and platform with the preference element. cli-7.0.1-->
+    <preference name="phonegap-version"			  value="cli-6.5.0" />
     <preference name="orientation"                value="landscape" />        <!-- portrait all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -54,7 +54,7 @@
 	<plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
 	<!-- <plugin spec="https://github.com/apache/cordova-plugin-file.git#5e12b5e" /> -->
 
-	<plugin name="cordova-plugin-file" spec="6.0.1" />
+	<plugin spec="https://github.com/apache/cordova-plugin-file.git#957e1dc" />
 	<plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git#c9ac8e1" />
 	<!-- <plugin name="cordova-plugin-file-transfer" spec="1.7.1" /> -->
 
