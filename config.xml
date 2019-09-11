@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "ir.smgroup.ir"
+        version   = "1.10" >
+		
+		
+    <name>الزيارة الافتراضية</name>
+    <description></description>
+    <author href="http://smgroup.ir" email="info@smgroup.ir">Sorush Mehr Rezvan</author>
+    <!--
+		ir.smgroup.saveimage
+        If you do not want any permissions to be added to your app, add the
+        following tag to your config.xml; you will still have the INTERNET
+        permission on your app, which PhoneGap requires. 
+    -->
+    <preference name="permissions"                value="none"/>
+
+    <!-- Customize your app and platform with the preference element. cli-7.0.1-->
+    <preference name="phonegap-version"					value="cli-7.0.1" />
+	<preference name="orientation"						value="landscape" />		<!-- all: default means both landscape and portrait are enabled -->
+	<preference name="target-device"					value="universal" />		<!-- all: possible values handset, tablet, or universal -->
+	<preference name="fullscreen"						value="true" />				<!-- all: hides the status bar at the top of the screen -->
+	<preference name="prerendered-icon"					value="true" />				<!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+	<preference name="ios-statusbarstyle"				value="black-opaque" />		<!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+	<preference name="detect-data-types"				value="false" />			<!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+	<preference name="exit-on-suspend"					value="false" />			<!-- ios: if set to true, app will terminate when home button is pressed -->
+	<preference name="AutoHideSplashScreen"				value="true" />
+	<preference name="disable-cursor"					value="false" />			<!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
+	<preference name="android-minSdkVersion"			value="16" />				<!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+	<preference name="android-installLocation"			value="auto" />				<!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+	<preference name="SplashScreenDelay"				value="5000"/>
+	<preference name="FadeSplashScreen"					value="false" />
+	<preference name="ShowSplashScreenSpinner"			value="false"/>
+	<preference name="AllowInlineMediaPlayback"			value="true" />
+	<preference name="MediaPlaybackRequiresUserAction"	value="false"/>
+
+	<!-- ???????????????????????????????????????????????????????????????????????????????????? -->
+	<!-- ???????????????????????????????????????????????????????????????????????????????????? -->
+	<!-- ???????????????????????????????????????????????????????????????????????????????????? -->
+	<preference name="DisallowOverscroll" value="true" />
+	<content src="index.html" />
+	
+    <!-- Plugins -->
+
+    <!-- Core plugins -->
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<!-- <plugin spec="https://github.com/apache/cordova-plugin-battery-status.git" source="git" /> -->
+    <!--<plugin spec="https://github.com/apache/cordova-plugin-media-capture.git" source="git" />-->
+	<plugin spec="https://github.com/apache/cordova-plugin-console.git" source="git" />
+	<plugin name="cordova-plugin-device" source="npm" />
+	<!--<plugin spec="https://github.com/apache/cordova-plugin-device-motion.git" source="git" />-->
+    <!--<plugin spec="https://github.com/apache/cordova-plugin-device-orientation.git" source="git" />-->
+	<plugin name="cordova-plugin-dialogs" source="npm" />
+	<!-- <plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git" source="git" /> -->
+	<plugin spec="https://github.com/apache/cordova-plugin-file.git" source="git" />
+	<!-- <plugin name="cordova-plugin-file" source="npm" /> -->
+	
+    <!--<plugin spec="https://github.com/fastrde/cordova-plugin-fastrde-downloader.git" source="git" />-->
+	<!-- <plugin name="cordova-plugin-geolocation" source="npm" spec="2.4.3" /> -->
+	<!--<plugin spec="https://github.com/apache/cordova-plugin-globalization.git" source="git" />-->
+	<plugin name="cordova-plugin-inappbrowser" source="npm"  /><!-- spec="1.7.0" -->
+	<plugin name="cordova-plugin-media" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="latest" />
+	
+	
+
+    <!-- Third party plugins -->
+	<plugin spec="https://github.com/fiscal-cliff/phonegap-plugin-brightness.git" source="git" />
+	<!-- <plugin spec="https://github.com/MobileChromeApps/cordova-plugin-zip.git" source="git" /> -->
+	<plugin spec="https://github.com/phonegap/phonegap-plugin-contentsync" source="git" />
+
+	<preference name="android-build-tool" value="gradle" />
+	<!--
+	<plugin name="phonegap-plugin-push" spec="~1.9.1" source="npm">
+		<param name="SENDER_ID" value="804625540618" />
+	</plugin>
+	-->
+	<!--
+	<plugin spec="https://github.com/miladesign/pushe-cordova-plugin.git" platform="android" source="git" >
+		<param name="PUSHE_TOKEN" value="222222222222" />
+		<param name="PUSHE_CR" value="11111111111111" />
+	</plugin>
+	-->
+	<!-- <plugin name="phonegap-plugin-barcodescanner" source="npm" /> -->
+	<!-- <plugin spec="https://github.com/Telerik-Verified-Plugins/BarcodeScanner.git" source="git" /> -->
+	<!-- <plugin spec="https://github.com/VersoSolutions/CordovaClipboard.git" source="git" /> -->
+
+
+	<plugin spec="https://github.com/Paldom/UniqueDeviceID.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-statusbar.git " source="git" />
+	<gap:config-file platform="ios" parent="UIStatusBarHidden">
+		<true/>
+	</gap:config-file>
+	<preference name="StatusBarOverlaysWebView" value="false" />
+	<!-- <preference name="Fullscreen" value="true" />  -->
+
+	<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+		<false/>
+	</gap:config-file>
+	<gap:config-file platform="ios" parent="UIBackgroundModes" overwrite="true">
+		<array>
+			<string>audio</string>
+		</array>
+	</gap:config-file>
+	
+	
+    <!-- Define app icon      -->
+    <icon src="res/icon.png" platform="android" />
+    <icon src="res/ios.png" platform="ios" />
+	
+	<platform name="android">
+		<gap:splash src="res/por/screen-ldpi-landscape.png"		density="land-ldpi" />
+		<gap:splash src="res/por/screen-mdpi-landscape.png"		density="land-mdpi" />
+		<gap:splash src="res/por/screen-hdpi-landscape.png"		density="land-hdpi" />
+		<gap:splash src="res/por/screen-xhdpi-landscape.png"		density="land-xhdpi" />
+		<gap:splash src="res/por/screen-xxhdpi-landscape.png"		density="land-xxhdpi" />
+	</platform>
+	<platform name="ios">
+		
+	</platform>
+    <engine name="ios" spec="latest" />
+	
+	<access origin="*"/> <!-- allow local pages -->
+	<allow-navigation href="*" />
+
+
+	
+	
+
+</widget>
