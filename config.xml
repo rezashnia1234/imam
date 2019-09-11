@@ -59,7 +59,7 @@
     <!--<plugin spec="https://github.com/fastrde/cordova-plugin-fastrde-downloader.git" source="git" />-->
 	<!-- <plugin name="cordova-plugin-geolocation" source="npm" spec="2.4.3" /> -->
 	<!--<plugin spec="https://github.com/apache/cordova-plugin-globalization.git" source="git" />-->
-	<plugin name="cordova-plugin-inappbrowser" source="npm"  /><!-- spec="1.7.0" -->
+	<!-- <plugin name="cordova-plugin-inappbrowser" source="npm"  /><!-- spec="1.7.0" --> -->
 	<plugin name="cordova-plugin-media" source="npm" />
 	<plugin name="cordova-plugin-network-information" source="npm" />
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="latest" />
